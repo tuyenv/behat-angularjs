@@ -1,0 +1,13 @@
+# behat.yml
+default:
+    paths:
+        features: features
+        bootstrap: %behat.paths.features%/bootstrap
+    extensions:
+        Behat\MinkExtension\Extension:
+            base_url: http://localhost:8000/#
+            show_cmd: open -a "Google Chrome" "%s"
+            javascript_session: 'selenium2'
+            browser_name: chrome # safari, firefox
+            goutte: ~
+            selenium2: ~
